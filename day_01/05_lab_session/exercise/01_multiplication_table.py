@@ -17,3 +17,11 @@ number = 3
 3 x 9 = 27
 3 x 10 = 30
 """
+
+total = 1
+print("number", "=", number)
+for x in range(1,11):
+    total = number * x
+    print(f"{number} x {x} = {total}")
+
+
