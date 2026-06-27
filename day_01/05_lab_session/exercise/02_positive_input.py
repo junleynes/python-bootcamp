@@ -1,9 +1,10 @@
 # TODO: Ask the user for an input that should be a number
-number = input("Enter number: ")
 
 # TODO: Then try to convert this into an integer using the following:
 try:
+    number = input("Enter number: ")
     number_converted = int(number)
+    print(number)
     print("You entered a valid number")
 # The user could provide an invalid integer input (string)
 # TODO: Handle this case
