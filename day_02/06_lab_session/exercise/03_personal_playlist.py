@@ -1,14 +1,19 @@
 def add(song, playlist):
     """TODO: Add song to playlist"""
+    playlist.append(song)
 
 def remove(song, playlist):
     """TODO: Remove song from playlist (if there)"""
+    playlist.remove(song)
 
 def play(playlist):
     """TODO: Print the first song in the playlist (if any) and remove"""
+    print(playlist[0]["Title"])
+    #playlist.pop[0]
 
 def show_all(playlist):
     """TODO: Print all contents in the playlist"""
+    print(playlist)
 
 def save(playlist, filepath):
     """Challenge: TODO: Save current playlist to filepath"""
@@ -32,7 +37,14 @@ def playlist_app():
         if user_choice == "add":
             new_song = input("Enter song name: ")
             add(new_song, playlist)
-        if user_choice == "exit":
+        elif user_choice == "remove":
+            remove_song = input("Enter song name: ")
+            remove(remove_song, playlist)
+        elif user_choice == "play":
+            play(playlist)
+        elif user_choice == "show_all":
+            show_all(playlist)
+        elif user_choice == "exit":
             end = True
 
 playlist_app()
