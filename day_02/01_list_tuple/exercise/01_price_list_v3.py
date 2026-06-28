@@ -13,3 +13,5 @@ print("New Price:")
 print("New Price:")
 
 # TODO: Remove the negative price in the list
+prices.remove(-200)
+print(prices)

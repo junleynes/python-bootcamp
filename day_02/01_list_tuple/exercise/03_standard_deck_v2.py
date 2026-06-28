@@ -16,5 +16,8 @@ cards = []
     3 of Diamonds
     ...
 """
+for suit in suits:
+    for rank in ranks:
+        cards.append(f"{rank} of {suit}")
 
 print(cards)
